@@ -89,9 +89,9 @@ background-color: #00ced1;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  background-color: #69cfd1;
-}
+	.collapsible.active, .collapsible:hover {
+		background-color: #69cfd1;
+	}
 
 .collapsible:after {
   content: '\002B';
@@ -101,17 +101,17 @@ background-color: #00ced1;
   margin-left: 5px;
 }
 
-.active:after {
-  content: "\2212";
-}
+	.collapsible.active:after {
+		content: "\2212";
+	}
 
 /* Style the collapsible content. Note: hidden by default */
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  background-color: #f1f1f1;
-  transition: max-height 0.2s ease-out;
+.collapsible.content {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	transition: max-height 0.2s ease-out;
 }
 
 
