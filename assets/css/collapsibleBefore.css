@@ -1,0 +1,40 @@
+.collapsibleB {
+    background-color: white;
+    color: #444;
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+    /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+    .collapsibleB.active, .collapsibleB:hover {
+        background-color: #69cfd1;
+    }
+
+    .collapsibleB:before {
+        content: '>';
+        color: black;
+        font-weight: 700;
+        float: left;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+
+    .collapsibleB.active:before {
+        content: 'v';
+    }
+
+    /* Style the collapsible content. Note: hidden by default */
+    .collapsibleB.content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        transition: max-height 0.2s ease-out;
+    }
