@@ -10,6 +10,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/timeline.css">
+    <link rel="stylesheet" href="assets/css/collapsibleBefore.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
 
 </head>
@@ -20,7 +21,7 @@
         <header>
             <!-- COSA VERDE DE LA DERECHA  -->
             <span class="image avatar"><img src="images/eric.jpg" alt="" /></span>
-            <h1 id="logo"><a >Èric Solà</a></h1>
+            <h1 id="logo"><a>Èric Solà</a></h1>
             <p>
                 Game Developer <br>
                 C++ Programmer
@@ -62,6 +63,7 @@
                     </header>
                     <p>
                         Hey, I'm Eric Sola a video game enthusiast who makes games from his bedroom and likes to waste his time programming cool stuff. Based in Barcelona, Spain. <br />
+                        My experience so far has been in mobile gaming and personal projects but I'm looking to move my career towards PC/Console games.
                         I like to play the banjo, armwrestling, basketball and video games :D <br />
                         I'm really interested in <b>Engine</b> and <b>Gameplay</b> Programming. Feel free to take a look at the different projects I've done so far.
                     </p>
@@ -71,7 +73,8 @@
                         <li class="icon solid fa-code"> C++ </li>
                         <li class="icon solid fa-code"> OpenGL | GLSL </li>
                         <li class="icon solid fa-code"> DirectX | HLSL </li>
-                        <li class="icon solid fa-code"> Design Patterns </li>
+                        <li class="icon solid fa-code"> Code Architecture </li>
+                        <li class="icon solid fa-code"> Git </li>
                         <li class="icon solid fa-gamepad"> Unity Engine </li>
                         <li class="icon solid fa-paint-brush"> Pixel Art </li>
                     </ul>
@@ -79,83 +82,124 @@
             </section>
 
             <section id="two">
-                <!--<div class="container">
-
-        <div class="timeline">
-            <div class="timeline container right">
-                <div class="timeline content">
-                    <h2>2017</h2>
-                    <p>Lorem ipsum..</p>
-                </div>
-            </div>
-            <div class="timeline container right">
-                <div class="timeline content">
-                    <h2>2016</h2>
-                    <p>Lorem ipsum..</p>
-                </div>
-            </div>
-        </div>
-    </div>-->
                 <div class="container">
-                    <h2 style="color:darkturquoise; font-size:50px">Games</h2>
+                    <h2 style="color:darkturquoise; font-size:50px">Work Experience</h2>
                     <div class="features">
                         <article>
-                            <a class="image"><img src="images/pato.jpg" alt="" /></a>
-                            <div class="inner">
-                                <h4>ThatGoodParty</h4>
+                            <div>
+                                <h4>DragonCity</h4>
                                 <p>
-                                    Is a 2D visual novel vertically scrolling video game about how drugs generates
-                                    dependence and change your environment made with Unity.<br />
+                                    Is a mobile game that has been live for 10 years. We work using our propietary <b>C++ game engine</b> that provides core functionality
+                                    to the game and uses <b>Cocos2D</b> for rendering.
+                                    During my time at DC I've been in different multidisciplinary teams working with UI/UX designers, BE engineers, artists and QA.
                                 </p>
                             </div>
-                            <!-- EXPANDABLEEEEEEEEEEEEEEEEEEEEEEEEEEE -->
                             <p>
-
                             </p>
+                            <div>
+                                <h4>DragonCity - Tech Team</h4>
+                                <h5 style="color:darkturquoise"> Oct 2023 - Today</h5>
+                                <!--Expandable-->
+                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                    <h4 onmouseover="changeColor(this, '#69cfd1');" onmouseout="resetColor(this);"><u>Became Squad Captain:</u></h4>
+                                </button>
+                                <div class="collapsible content">
+                                    <p>
+                                        This game was born during Mini jam 2nd edition which theme was "self destruct"
+                                        and the requeriments were to use NES palette and only 3 colors
+                                        per sprite (we overlapped sprites if +3 colors were needed)
+                                        After the game jam we decided to take the concept further and add more features to reach our main goal in the design.
+                                    </p>
+                                    <i> My Role in this project:</i>
 
-                            <button type="button" class="collapsible" style="color:white"> More Info About my Role </button>
-                            <div class="collapsible content">
-                                <p>
-                                    This game was born during Mini jam 2nd edition which theme was "self destruct"
-                                    and the requeriments were to use NES palette and only 3 colors
-                                    per sprite (we overlapped sprites if +3 colors were needed)
-                                    After the game jam we decided to take the concept further and add more features to reach our main goal in the design.
-                                </p>
-                                <i> My Role in this project:</i>
+                                    <ul>
+                                        <li style="font-weight:bolder">
+                                            Gameplay Programmer:
+                                            <p style="font-weight:100">
+                                                - I programmed an acceleration based movement for the main character
+                                                both for the horizontal walk and the vertical momentum. <br />
+                                                -Also the stars give vertical momentum to the player. Thanks to the acceleration system
+                                                it was an easy add on that makes the game more interesting to play.
+                                            </p>
+                                        </li>
 
-                                <ul>
-                                    <li style="font-weight:bolder">
-                                        Gameplay Programmer:
-                                        <p style="font-weight:100">
-                                            - I programmed an acceleration based movement for the main character
-                                            both for the horizontal walk and the vertical momentum. <br />
-                                            -Also the stars give vertical momentum to the player. Thanks to the acceleration system
-                                            it was an easy add on that makes the game more interesting to play.
-                                        </p>
-                                    </li>
-
-                                    <li style="font-weight:bolder">
-                                        Pixel Artist:
-                                        <p style="font-weight:100">
-                                            - I made the main character animations and the background art using Aseprite.
-                                        </p>
-                                    </li>
-                                    <li style="font-weight:bolder">
-                                        Team Size:
-                                        <p style="font-weight:100">
-                                            - 2 members.
-                                        </p>
-                                    </li>
-                                </ul>
-                                <a class="image"><img src="images/patogif.gif" alt="" /></a>
-                                <a class="image"><img src="images/patogif1.gif" alt="" /></a>
+                                        <li style="font-weight:bolder">
+                                            Pixel Artist:
+                                            <p style="font-weight:100">
+                                                - I made the main character animations and the background art using Aseprite.
+                                            </p>
+                                        </li>
+                                        <li style="font-weight:bolder">
+                                            Team Size:
+                                            <p style="font-weight:100">
+                                                - 2 members.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                            <a href="https://github.com/Stuck-in-the-banjo/ThatGoodParty" class="icon brands fa-github"><span class="label"></span>Github</a><br />
-                            <a href="https://botttos.itch.io/thatgoodparty" class="icon solid fa-gamepad"><span class="label">Email</span>Itch.io</a>
-                        </article>
+                            <p>
+                            </p>
+                            <div>
+                                <h4>DragonCity - Tech Team</h4>
+                                <h5 style="color:darkturquoise"> Jan 2023 - Sep 2023</h5>
+                                Tech team focus is on stability and tech projects. <br />
+                                As part of this team I was <b>Monitoring Key KPIs</b> and finding solutions to <b>reduce crashes</b> and <b>In App Purchases errors</b>. <br />
+                                As Tech projects I worked on:<br />
+
+                                <!--Expandable-->
+                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                    <h4 onmouseover="changeColor(this, '#69cfd1');" onmouseout="resetColor(this);">Zynga Webstore:</h4>
+                                </button>
+                                <div class="collapsible content">
+                                    <p>
+                                        This game was born during Mini jam 2nd edition which theme was "self destruct"
+                                        and the requeriments were to use NES palette and only 3 colors
+                                        per sprite (we overlapped sprites if +3 colors were needed)
+                                        After the game jam we decided to take the concept further and add more features to reach our main goal in the design.
+                                    </p>
+                                    <i> My Role in this project:</i>
+
+                                    <ul>
+                                        <li style="font-weight:bolder">
+                                            Gameplay Programmer:
+                                            <p style="font-weight:100">
+                                                - I programmed an acceleration based movement for the main character
+                                                both for the horizontal walk and the vertical momentum. <br />
+                                                -Also the stars give vertical momentum to the player. Thanks to the acceleration system
+                                                it was an easy add on that makes the game more interesting to play.
+                                            </p>
+                                        </li>
+
+                                        <li style="font-weight:bolder">
+                                            Pixel Artist:
+                                            <p style="font-weight:100">
+                                                - I made the main character animations and the background art using Aseprite.
+                                            </p>
+                                        </li>
+                                        <li style="font-weight:bolder">
+                                            Team Size:
+                                            <p style="font-weight:100">
+                                                - 2 members.
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p>
+                            </p>
+                            <div>
+                                <h4>DragonCity - Feature Team</h4>
+                                <h5 style="color:darkturquoise">Feb 2021 - Dec 2022</h5>
+                                <p>
+                                    lorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                                    lorem ipsumlorem ipsumlorem ipsumlorem ipsum
+                                    vlorem ipsumlorem ipsumlorem ipsumvlorem ipsumlorem ipsumlorem ipsum
+                                    lorem ipsumlorem ipsumlorem ipsum
+                                </p>
+                            </div>
                     </div>
                 </div>
-
             </section>
 
             <!-- Two -->
@@ -894,7 +938,6 @@
         <section id="footer">
             <div class="container">
                 <ul class="copyright">
-                    
                 </ul>
             </div>
         </section>
@@ -909,8 +952,24 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/colapsible.js"></script>
+    <script src="assets/js/colapsibleB.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        function changeColor(element, color) {
+            element.style.color = color;
+        }
 
+        function resetColor(element) {
+            element.removeAttribute('style'); // Remove the inline style attribute
+        }
+    </script>
+    <script>
+        function changeBeforeColor(element, color) {
+            element.classList.toggle('active');
+            var beforeElement = element.querySelector('.collapsibleB::before');
+            beforeElement.style.color = color;            
+        }
+    </script>
 
 
 
