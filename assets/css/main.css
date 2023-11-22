@@ -6,6 +6,11 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+:root {
+	--background-color: #5ACDD1; /* Default background color */
+	--hover-color: #87E1E6;
+	--hover-clear-color: #BBEDF2;
+}
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -72,25 +77,64 @@ input, select, textarea {
 	appearance: none;
 }
 
+.collapsibleB {
+	background-color: white;
+	color: #444;
+	cursor: pointer;
+	padding: 0px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+	/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+	.collapsibleB.active, .collapsibleB:hover {
+		background-color: var(--background-color);
+	}
+
+	.collapsibleB:before {
+		content: '>';
+		color: black;
+		font-weight: 700;
+		float: left;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 5px;
+	}
+
+	.collapsibleB.active:before {
+		content: 'v';
+	}
+
+	/* Style the collapsible content. Note: hidden by default */
+	.collapsibleB.content {
+		padding: 0 18px;
+		max-height: 0;
+		overflow: hidden;
+		background-color: #f1f1f1;
+		transition: max-height 0.2s ease-out;
+	}
 
 
-
-.collapsible{
-background-color: #00ced1;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  font-weight: 700;
+.collapsible {
+	background-color: var(--background-color);
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	font-weight: 700;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 	.collapsible.active, .collapsible:hover {
-		background-color: #69cfd1;
+		background-color: var(--hover-color);
 	}
 
 .collapsible:after {
@@ -160,7 +204,7 @@ background-color: #00ced1;
 
 		a:hover {
 			border-bottom-color: transparent;
-			color: #00ced1 !important;
+			color: var(--background-color) !important;
 		}
 
 	strong, b {
@@ -1827,10 +1871,10 @@ background-color: #00ced1;
 		line-height: 1.5em;
 	}
 
-	header.major h2 {
-		color: #00ced1;
-		font-size: 3.5em;
-	}
+header.major h2 {
+	color: var(--background-color);
+	font-size: 3.5em;
+}
 
 		header.major h2 + p {
 			color: #777;
@@ -1891,7 +1935,7 @@ background-color: #00ced1;
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #00ced1;
+			border-color: var(--background-color);
 		}
 
 	select {
@@ -1996,7 +2040,7 @@ background-color: #00ced1;
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #00ced1;
+			border-color: var(--background-color);
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2445,7 +2489,7 @@ background-color: #00ced1;
 			}
 
 			ul.feature-icons li:before {
-				background: #00ced1;
+				background: var(--background-color);
 				border-radius: 100%;
 				color: #ffffff;
 				display: block;
@@ -2661,7 +2705,7 @@ background-color: #00ced1;
 		input[type="reset"].primary,
 		input[type="button"].primary,
 		.button.primary {
-			background-color: #00ced1;
+			background-color: var(--background-color);
 			color: #ffffff !important;
 		}
 
@@ -2730,29 +2774,29 @@ background-color: #00ced1;
 
 /* Header */
 
-	#header {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-justify-content: space-between;
-		-webkit-justify-content: space-between;
-		-ms-justify-content: space-between;
-		justify-content: space-between;
-		background: #00ced1;
-		color: #d2f2e9;
-		height: 100%;
-		overflow-y: auto;
-		position: fixed;
-		text-align: center;
-		top: 0;
-		width: 23em;
-		right: 0;
-	}
+#header {
+	display: -moz-flex;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-moz-justify-content: space-between;
+	-webkit-justify-content: space-between;
+	-ms-justify-content: space-between;
+	justify-content: space-between;
+	background: var(--background-color);
+	color: #d2f2e9;
+	height: 100%;
+	overflow-y: auto;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 23em;
+	right: 0;
+}
 
 		#header h1, #header h2, #header h3, #header h4, #header h5, #header h6 {
 			color: #ffffff;
@@ -2763,11 +2807,11 @@ background-color: #00ced1;
 			}
 
 		#header header p {
-			color: #b7eadc;
+			color: #ffffff;
 		}
 
 		#header a {
-			color: #d2f2e9;
+			color: red;
 		}
 
 			#header a:hover {
@@ -2794,7 +2838,7 @@ background-color: #00ced1;
 			}
 
 			#header > header p {
-				color: #d2f2e9;
+				color: #ffffff;
 				font-style: italic;
 				margin: 1em 0 0 0;
 			}
@@ -2815,7 +2859,7 @@ background-color: #00ced1;
 			}
 
 				#header > footer .icons li a {
-					color: #b7eadc;
+					color: var(--hover-clear-color);
 				}
 
 		#header > nav {
@@ -2832,7 +2876,7 @@ background-color: #00ced1;
 			}
 
 				#header > nav ul li {
-					border-top: solid 2px #00dbde;
+					border-top: solid 2px var(--background-color);
 					display: block;
 					padding: 0;
 				}
@@ -2845,13 +2889,13 @@ background-color: #00ced1;
 						border: 0;
 						color: #ffffff !important;
 						display: block;
-						padding: 0.85em 0;
+						padding: 0.5em 0;
 						text-decoration: none;
 					}
 
 						#header > nav ul li a.active {
 							background: #fff;
-							color: #00ced1 !important;
+							color: var(--background-color) !important;
 						}
 						#header > nav ul li a.active:after {
 							background: #fff;
@@ -3123,7 +3167,7 @@ background-color: #00ced1;
 					}
 
 					#titleBar .toggle:before {
-						background: #00ced1;
+						background: var(--background-color);
 						color: #ffffff;
 						content: '\f0c9';
 						display: block;
