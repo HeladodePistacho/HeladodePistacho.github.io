@@ -32,6 +32,14 @@
             --hover-clear-color: #F2D2BB;
         }
     </style>
+    <style>
+        /* Set the container to relative positioning */
+        .containerTest {
+            position: relative;
+            display: flex;
+            align-items: center; /* Center text horizontally */
+        }
+    </style>
 
 </head>
 <body class="is-preload">
@@ -58,9 +66,9 @@
         <footer>
             <b style="color:white">Contact:</b>
             <ul class="icons">
+                <li><a href="mailto:th_sola@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
                 <li><a href="https://www.linkedin.com/in/èric-solà-vila-266549164" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
                 <li><a href="https://github.com/HeladodePistacho" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                <li><a href="mailto:th_sola@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
             </ul>
         </footer>
     </section>
@@ -82,333 +90,358 @@
                     <div class="features">
                         <article>
                             <div>
-                                <h3 class="thicker">Socialpoint, Take2</h3>
-                                <h4 class="thicker">DragonCity - Mobile Game Developer</h4>
-                                <h6 style="color: var(--background-color);">Feb 2021 - Today</h6>
-                                <p>
-                                    Is a breed and collect mobile game that has been live for 10 years. We work using our propietary <b class="thicker">C++ game engine</b> that provides core functionality
-                                    to the game and uses <b class="thicker">Cocos2D</b> for rendering.
-                                    During my time at DC I've been in different multidisciplinary teams working with UI/UX designers, BE engineers, artists and QA.<br />
-                                    <br />
-                                    The core work as a mobile developer is: <br />
-                                    - <b class="thicker"> Designing Code </b> Architecture.<br />
-                                    - <b class="thicker"> Coding in C++. </b><br />
-                                    - <b class="thicker"> Releasing versions </b> to all supported platforms. <br />
-                                    - Writing feature documentation.
-                                </p>
-                            </div>
-                            <p>
-                            </p>
-                            <div>
-                                <h4 class="thicker">DragonCity - Tech Team  <span class="subtitle" style="color: var(--background-color);">Oct 2023 - Today</span></h4>
-                                <!--Expandable-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Became Squad Captain:</u></h4>
-                                </button>
-                                <div class="collapsible content">
+                                <h3 class="thicker"><span><img src="Images/sp.png" alt="" style="width: 5%; height: 5%;"></span>Socialpoint, Take2</h3>
+                                <div class="containerTest">
+                                    <img src="Images/dc.png" alt="" style="width: 3%; height: auto; border-radius:15%;">
+                                    <div><h4 class="thicker" style="margin-top: 3%;" >DragonCity - Mobile Game Developer</h4></div>                                    
+                                </div>
+                                    <h6 style="color: var(--background-color);">Feb 2021 - Today</h6>
                                     <p>
-                                        I got the oportunity to became the squad captain of the Tech Team. A part from my day to day programmer tasks this includes:
-                                    </p>
-                                    <ul>
-                                        <li style="font-weight:bolder">
-                                            Managing Squad Meetings:
-                                            <p style="font-weight:100">
-                                                Ensuring all documentation is prepared before the meeting starts and the responsible of conducting the meetings, which are:<br />
-                                                - Daily Stand up. <br />
-                                                - Weekly/Monthly Planning. <br />
-                                                - Retrospective. <br />
-                                                - Team Health check.
-                                            </p>
-                                        </li>
-
-                                        <li style="font-weight:bolder">
-                                            Managing the Backlog:
-                                            <p style="font-weight:100">
-                                                Making sure we have the tickets prepared for the sprint and everyone knows what we have to do. Also making sure of removing old tickets or keeping them updated as long as they are relevant.
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p>
-                            </p>
-                            <div>
-                                <h4 class="thicker">DragonCity - Tech Team <span class="subtitle" style="color: var(--background-color);">Jan 2023 - Sep 2023</span></h4>
-                                <b class="thicker">We are the guys you call when everything explodes!</b><br />
-                                Tech Team focus is on stability and projects related with core systems of the game including modifications to the engine itself.
-                                As part of this team I was <b class="thicker">Monitoring Key KPIs</b> and <b class="thicker"> improving them </b> overtime: <br />
-
-                                <br />
-                                Projects I worked on:<br />
-
-                                <!--Expandable DragonCity Webstore-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>DragonCity Webstore:</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:400">
-                                        The webstore project is the integration of a Dragon City webstore to bypass platform fees which is a standard in the mobile game industry.<br />
-                                        The client part of this project was focused on the comunication between the Store, the Game and the Backend. And release a smooth experience to the players which don't need to relogin into the game nor go manually from the
-                                        webpage to the game and back.<br />
-                                        The key learnings for this projects were:<br />
-                                    </p>
-                                    <ul>
-                                        <li style="font-weight:bolder">
-                                            Deeplinking:
-                                            <p style="font-weight:100">
-                                                <i>Have you ever wondered how tik tok knows to open when you click on the link your partner sends you? Deeplinking is how!</i><br />
-                                                This is a OS feature that allows your app to open specific links. Basically when you install the app this links in the config file are set by the OS and when you try to open one of them is detected and gives priority to your app instead of the browser
-                                            </p>
-                                        </li>
-
-                                        <li style="font-weight:bolder">
-                                            Multithreading:
-                                            <p style="font-weight:100">
-                                                <i>This was not my first glance at multithreading but it was the first time that it was my fault when it failed.</i><br />
-                                                The good thing was that the multithreading part was not a big deal but was a great practice overall making me wrap my head around race conditions.
-                                            </p>
-                                        </li>
-                                        <li style="font-weight:bolder">
-                                            Team Diversity:
-                                            <p style="font-weight:100">
-                                                At that time we were working with the Webpage team which was in San Francisco, the Take2 team in New York and us in Spain which make a wonderful experience but working hours where such a mess.<br />
-                                                A part from the legal, marketing and "Non Dev" teams around the globe.
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!--Expandable IAP Reuse-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>In App Purchase Re-use:</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:400">
-                                        The IAP Reuse was a pain in the ass project which <b class="thicker"> improved drastically the quality of live of our LiveOps team.</b> Giving them the oportunity to reduce the number of managed IAPs from 400-500 to less than 50.<br />
-                                        The key learnings for this projects were:<br />
-                                    </p>
-                                    <ul>
-                                        <li style="font-weight:bolder">
-                                            Data Analysis:
-                                            <p style="font-weight:100">
-                                                <i>God bless the analythics team, hopefully I never have to do their job!</i><br />
-                                                When we were doing the refactor, the analythics team was really helpful providing their needs on how to structurate the data we were sending them for the database so they could read it easier.
-                                            </p>
-                                        </li>
-
-                                        <li style="font-weight:bolder">
-                                            Engine Programming:
-                                            <p style="font-weight:100">
-                                                A really good things was beeing able to modify and fix bugs in the engine even if there's always a bit of anxiety going on to not break the other games of the company.
-                                            </p>
-                                        </li>
-
-                                    </ul>
-                                </div>
-
-                                <!--Expandable Crash Hunting-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Crash Hunting:</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:400">
-                                        <i>In the Tech Team we spend some of the work force to reduce crashes and I was not exception doing this.</i><br />
-                                        A lot of the crashes were straight forward to fix:<br />
-                                        - Check the callstack.<br />
-                                        - See what is causing the crash.<br />
-                                        - Pull the thread until you find why the stupid pointer was nullptr in the first place.<br />
-                                        - Fix it.<br />
+                                        Is a breed and collect mobile game that has been live for 10 years. We work using our propietary <b class="thicker">C++ game engine</b> that provides core functionality
+                                        to the game and uses <b class="thicker">Cocos2D</b> for rendering.
+                                        During my time at DC I've been in different multidisciplinary teams working with UI/UX designers, BE engineers, artists and QA.<br />
                                         <br />
-                                        But there was a special crashs which really help me improve:
-                                    </p>
-                                    <ul>
-                                        <li style="font-weight:bolder">
-                                            CURL Crash:
-                                            <p style="font-weight:100">
-                                                While I was testing I found that in the tutorial, if you were using a proxy, when an HTTPRequest was cancelled sometimes you got a crash.<br />
-                                                <b class="thicker"> How we Fixed It:</b><br />
-                                                As it was early in the game, we overwrote the delete operator so everytime the game deallocates memory it was not freed but instead set to a specific value. And then we spend some hours looking at the memory
-                                                layout of the things we were deallocating until we found that CURL was deleting a block of memory that was previously freed. And yes only happened to us because we are the only ones using a proxy in the game!<br />
-                                                I reffer as we because my lead was helping me with this one as he had 30 years of experience doing videogames. But it was very enlightening to me.
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <!--ExpandableMinor tasks-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Minor Projects:</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <ul>
-                                        <li style="font-weight:bolder">
-                                            Helping Liveops Team:
-                                            <p style="font-weight:100">
-                                                We are always there for our beloved Liveops Team, when they have doubts of how system works,
-                                                requests to improve things and helping them when they set the game on fire both in dev environments and in production.
-                                            </p>
-                                        </li>
-                                        <li style="font-weight:bolder">
-                                            Bug Fixing:
-                                            <p style="font-weight:100">
-                                                Another important aspect of the Tech team is fixing bugs and most of them are in the Battle system which has the most spaghetti code of the entire project.
-                                                But we manage to keep it stable. <i> At Least doesn't crash! </i>
-                                            </p>
-                                        </li>
-                                        <li style="font-weight:bolder">
-                                            Battle System Refactor:
-                                            <p style="font-weight:100">
-                                                This is <b class="thicker">MY PERSONAL CRUSADE</b> in the game. Everytime we have to do a new flashy skill for a dragon all the devs are afraid because the code is horrible.
-                                                The system was not designed for what we are doing now and every new skill makes it worse.<br />
-                                                This is kind of a personal project I have inside the game because it's the biggest paint point for us.<br />
-                                                <br />
-                                                The main paint points of the system are:<br />
-                                                - To much dependancy between skills. <br />
-                                                - Animations not following the order the game logic follows. <br />
-                                                - Lack of modularity which has lead to a lot of copy-pasted code between skills.<br />
-                                                I designed a new way of doing it but it still has to prove that it works.
-                                            </p>
-                                        </li>
-                                        <li style="font-weight:bolder">
-                                            Unified Login Pipeline:
-                                            <p style="font-weight:100">
-                                                Integrate the login pipeline that the engine team had prepared into the game, create an ABTest to check which is the best configuration and release it to everyone!
-                                            </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <p>
-                            </p>
-                            <div>
-                                <h4 class="thicker">DragonCity - Feature Team <span class="subtitle" style="color: var(--background-color);">Feb 2021 - Dec 2022</span></h4>
-                                As part of a feature team my job was to integrate <b class="thicker">new content into the game</b> within a multidisciplinary squad working with game desginers, UI/UX Designers, QA, Backend engineers and Artists. <br />
-                                We use a <b class="thicker">Model-View-Controller Architecture</b> for all the UI related things, which is most of our daily work except for combat. <br /><br />
-                                Projects I worked on:
-
-                                <!--Expandable Hold button tasks-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Hold Functionality:</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:100">
-                                        <i>This was my first task at Dragon City!</i> <br />
-                                        I created a component that can be added to any button in the game so you only need to provide some callbacks and the component will handle the holding functionality.<br />
-                                        This was used for example in the feeding dragons which was a nice quality of life improvement.
-                                    </p>
-                                    <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/R0FwUYuS3OY?si=zFVxZM_6g7qQSQU6" title="Fast feeding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-                                </div>
-
-                                <!--Expandable Dragon Mastery tasks-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Dragon Mastery:</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:100">
-                                        This is an early game feature which was intended to give some guidance to the players throught available goals which were giving rewards upon completion.<br />
-                                        The feature was a small succes which managed to increase early retention for new game users.<br />
-                                        Here you can see some screenshots:
+                                        The core work as a mobile developer is: <br />
+                                        - <b class="thicker"> Designing Code </b> Architecture.<br />
+                                        - <b class="thicker"> Coding in C++. </b><br />
+                                        - <b class="thicker"> Releasing versions </b> to all supported platforms. <br />
+                                        - Writing feature documentation.
                                     </p>
                                 </div>
+                                <p>
+                                </p>
+                                <div>
+                                    <div class="containerTest">
+                                        <img src="Images/dc.png" alt="" style="width: 3%; height: auto; border-radius:15%;">
+                                        <div><h4 class="thicker" style="margin-top: 5%; margin-left: 4px;">DragonCity - Tech Team  <span class="subtitle" style="color: var(--background-color);">Oct 2023 - Today</span></h4></div>
+                                    </div>
+                                    
+                                    <!--Expandable-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Became Squad Captain:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p>
+                                            I got the oportunity to became the squad captain of the Tech Team. A part from my day to day programmer tasks this includes:
+                                        </p>
+                                        <ul>
+                                            <li style="font-weight:bolder">
+                                                Managing Squad Meetings:
+                                                <p style="font-weight:100">
+                                                    Ensuring all documentation is prepared before the meeting starts and the responsible of conducting the meetings, which are:<br />
+                                                    - Daily Stand up. <br />
+                                                    - Weekly/Monthly Planning. <br />
+                                                    - Retrospective. <br />
+                                                    - Team Health check.
+                                                </p>
+                                            </li>
 
-                                <!--Expandable Dragon Perks tasks-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Dragon Perks:</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:100">
-                                        This is a feature which intention was to give an RPG component to the dragons.<br />
-                                        We did a generic system which allow to create and give perks to the users via json. They are available to read anywhere the player has a dragon and can apply it's effect when needed.<br />
-                                        This feature was divided in 3 phases:
-                                    </p>
-                                    <ul>
-                                        <li style="font-weight:bolder">
-                                            Breeding Perk
-                                            <p style="font-weight:100">
-                                                We wanted to try the feature with a less risky approach and we created the perk that give better chance of breeding to the players. It had a positive impact and players wanted to see what else would we deliver.
-                                            </p>
-                                        </li>
-                                        <li style="font-weight:bolder">
-                                            Combat Perks:
-                                            <p style="font-weight:100">
-                                                This was the most important part, we created 3 new perks for combat, and laid the foundations to the new perks that would be developed in the future for combat<br />
-                                                - <i>Damage and Health Perks:</i> Pretty explanatory give you a stat boost.<br />
-                                                - <i>Phoenix Perk:</i> This perk was meta-shifting because it revives the dragon that carries it.<br />
-                                                Overall it had a positive impact in revenues and in the comunity even if free to play players felt this was to much pay to win.
-                                            </p>
-                                        </li>
-                                        <li style="font-weight:bolder">
-                                            Perks CLean Up:
-                                            <p style="font-weight:100">
-                                                Last phase of the perk system, we prepared everything so any squad could create a perk put it in the json and give it to the players to play.
-                                                This included standardization on how to create perks and lots of documentation.<br />
-                                                Also there are some quality of life for players regarding how much perks they have, find dragons that have perks and better UI to go to the perk screen.
-                                            </p>
-                                        </li>
-                                    </ul>
-                                    <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/vlos7oA1ShI?si=OT04gO044SkBJczX" title="Perks 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                                            <li style="font-weight:bolder">
+                                                Managing the Backlog:
+                                                <p style="font-weight:100">
+                                                    Making sure we have the tickets prepared for the sprint and everyone knows what we have to do. Also making sure of removing old tickets or keeping them updated as long as they are relevant.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                <p>
+                                </p>
+                                <div>
+                                    <div class="containerTest">
+                                        <img src="Images/dc.png" alt="" style="width: 3%; height: auto; border-radius:15%;">
+                                        <div><h4 class="thicker" style="margin-top: 5%; margin-left: 4px;">DragonCity - Tech Team  <span class="subtitle" style="color: var(--background-color);">Jan 2023 - Sep 2023</span></h4></div>
+                                    </div>                                    
+                                    <b class="thicker">We are the guys you call when everything explodes!</b><br />
+                                    Tech Team focus is on stability and projects related with core systems of the game including modifications to the engine itself.
+                                    As part of this team I was <b class="thicker">Monitoring Key KPIs</b> and <b class="thicker"> improving them </b> overtime: <br />
 
-                                <!--Expandable Bunker Skill tasks-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Bunker Dragon Skill:</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:100">
-                                        We did a collaboration with The Walking Dead and I was the main developer for the skills of the thematic dragons.<br />
-                                        We wanted to do something new and added a new feature to the battle system: <b class="thicker">Battle Auras</b>.<br />
-                                        Battle Auras are effects that are applied to all the team and last an amount of turns, which was something we were lacking in Dragon City.<br />
-                                        I embedded the new system into the battle system and wrote the documentation needed to create more in the future.<br />
-                                        <br />
-                                        You can see the bunker skill in the gif below but is basically a shield that reduces the damage from the oponent dragons by X% and avoids critical damage.
-                                    </p>
-                                    <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/2zYZCdjTFHA?si=gC3uKluIJRA8-q0t" title="Bunker Skill" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                                    <br />
+                                    Projects I worked on:<br />
+
+                                    <!--Expandable DragonCity Webstore-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>DragonCity Webstore:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:400">
+                                            The webstore project is the integration of a Dragon City webstore to bypass platform fees which is a standard in the mobile game industry.<br />
+                                            The client part of this project was focused on the comunication between the Store, the Game and the Backend. And release a smooth experience to the players which don't need to relogin into the game nor go manually from the
+                                            webpage to the game and back.<br />
+                                            The key learnings for this projects were:<br />
+                                        </p>
+                                        <ul>
+                                            <li style="font-weight:bolder">
+                                                Deeplinking:
+                                                <p style="font-weight:100">
+                                                    <i>Have you ever wondered how tik tok knows to open when you click on the link your partner sends you? Deeplinking is how!</i><br />
+                                                    This is a OS feature that allows your app to open specific links. Basically when you install the app this links in the config file are set by the OS and when you try to open one of them is detected and gives priority to your app instead of the browser
+                                                </p>
+                                            </li>
+
+                                            <li style="font-weight:bolder">
+                                                Multithreading:
+                                                <p style="font-weight:100">
+                                                    <i>This was not my first glance at multithreading but it was the first time that it was my fault when it failed.</i><br />
+                                                    The good thing was that the multithreading part was not a big deal but was a great practice overall making me wrap my head around race conditions.
+                                                </p>
+                                            </li>
+                                            <li style="font-weight:bolder">
+                                                Team Diversity:
+                                                <p style="font-weight:100">
+                                                    At that time we were working with the Webpage team which was in San Francisco, the Take2 team in New York and us in Spain which make a wonderful experience but working hours where such a mess.<br />
+                                                    A part from the legal, marketing and "Non Dev" teams around the globe.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!--Expandable IAP Reuse-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>In App Purchase Re-use:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:400">
+                                            The IAP Reuse was a pain in the ass project which <b class="thicker"> improved drastically the quality of live of our LiveOps team.</b> Giving them the oportunity to reduce the number of managed IAPs from 400-500 to less than 50.<br />
+                                            The key learnings for this projects were:<br />
+                                        </p>
+                                        <ul>
+                                            <li style="font-weight:bolder">
+                                                Data Analysis:
+                                                <p style="font-weight:100">
+                                                    <i>God bless the analythics team, hopefully I never have to do their job!</i><br />
+                                                    When we were doing the refactor, the analythics team was really helpful providing their needs on how to structurate the data we were sending them for the database so they could read it easier.
+                                                </p>
+                                            </li>
+
+                                            <li style="font-weight:bolder">
+                                                Engine Programming:
+                                                <p style="font-weight:100">
+                                                    A really good things was beeing able to modify and fix bugs in the engine even if there's always a bit of anxiety going on to not break the other games of the company.
+                                                </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+
+                                    <!--Expandable Crash Hunting-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Crash Hunting:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:400">
+                                            <i>In the Tech Team we spend some of the work force to reduce crashes and I was not exception doing this.</i><br />
+                                            A lot of the crashes were straight forward to fix:<br />
+                                            - Check the callstack.<br />
+                                            - See what is causing the crash.<br />
+                                            - Pull the thread until you find why the stupid pointer was nullptr in the first place.<br />
+                                            - Fix it.<br />
+                                            <br />
+                                            But there was a special crashs which really help me improve:
+                                        </p>
+                                        <ul>
+                                            <li style="font-weight:bolder">
+                                                CURL Crash:
+                                                <p style="font-weight:100">
+                                                    While I was testing I found that in the tutorial, if you were using a proxy, when an HTTPRequest was cancelled sometimes you got a crash.<br />
+                                                    <b class="thicker"> How we Fixed It:</b><br />
+                                                    As it was early in the game, we overwrote the delete operator so everytime the game deallocates memory it was not freed but instead set to a specific value. And then we spend some hours looking at the memory
+                                                    layout of the things we were deallocating until we found that CURL was deleting a block of memory that was previously freed. And yes only happened to us because we are the only ones using a proxy in the game!<br />
+                                                    I reffer as we because my lead was helping me with this one as he had 30 years of experience doing videogames. But it was very enlightening to me.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!--ExpandableMinor tasks-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Minor Projects:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <ul>
+                                            <li style="font-weight:bolder">
+                                                Helping Liveops Team:
+                                                <p style="font-weight:100">
+                                                    We are always there for our beloved Liveops Team, when they have doubts of how system works,
+                                                    requests to improve things and helping them when they set the game on fire both in dev environments and in production.
+                                                </p>
+                                            </li>
+                                            <li style="font-weight:bolder">
+                                                Bug Fixing:
+                                                <p style="font-weight:100">
+                                                    Another important aspect of the Tech team is fixing bugs and most of them are in the Battle system which has the most spaghetti code of the entire project.
+                                                    But we manage to keep it stable. <i> At Least doesn't crash! </i>
+                                                </p>
+                                            </li>
+                                            <li style="font-weight:bolder">
+                                                Battle System Refactor:
+                                                <p style="font-weight:100">
+                                                    This is <b class="thicker">MY PERSONAL CRUSADE</b> in the game. Everytime we have to do a new flashy skill for a dragon all the devs are afraid because the code is horrible.
+                                                    The system was not designed for what we are doing now and every new skill makes it worse.<br />
+                                                    This is kind of a personal project I have inside the game because it's the biggest paint point for us.<br />
+                                                    <br />
+                                                    The main paint points of the system are:<br />
+                                                    - To much dependancy between skills. <br />
+                                                    - Animations not following the order the game logic follows. <br />
+                                                    - Lack of modularity which has lead to a lot of copy-pasted code between skills.<br />
+                                                    I designed a new way of doing it but it still has to prove that it works.
+                                                </p>
+                                            </li>
+                                            <li style="font-weight:bolder">
+                                                Unified Login Pipeline:
+                                                <p style="font-weight:100">
+                                                    Integrate the login pipeline that the engine team had prepared into the game, create an ABTest to check which is the best configuration and release it to everyone!
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
+                                <p>
+                                </p>
+                                <div>
+                                    <div class="containerTest">
+                                        <img src="Images/dc.png" alt="" style="width: 3%; height: auto; border-radius:15%;">
+                                        <div><h4 class="thicker" style="margin-top: 4%; margin-left: 4px;">DragonCity - Feature Team  <span class="subtitle" style="color: var(--background-color);">Feb 2021 - Dec 2022</span></h4></div>
+                                    </div>                                    
+                                    As part of a feature team my job was to integrate <b class="thicker">new content into the game</b> within a multidisciplinary squad working with game desginers, UI/UX Designers, QA, Backend engineers and Artists. <br />
+                                    We use a <b class="thicker">Model-View-Controller Architecture</b> for all the UI related things, which is most of our daily work except for combat. <br /><br />
+                                    Projects I worked on:
 
-                                <!--Expandable Merge Minigame tasks-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Merge Minigame:</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:100">
-                                        We did a small test for new game users to see if they engage with a merge like feature and the result was pretty good even if the feature was 30 seconds - 1 minute long!
-                                    </p>
-                                    <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/1IgZf0lo5wY?si=NCpJRRd0l-91Rabw" title="Merge Minigame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                                    <!--Expandable Hold button tasks-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Hold Functionality:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:100">
+                                            <i>This was my first task at Dragon City!</i> <br />
+                                            I created a component that can be added to any button in the game so you only need to provide some callbacks and the component will handle the holding functionality.<br />
+                                            This was used for example in the feeding dragons which was a nice quality of life improvement.
+                                        </p>
+                                        <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/R0FwUYuS3OY?si=zFVxZM_6g7qQSQU6" title="Fast feeding" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                                    </div>
+
+                                    <!--Expandable Dragon Mastery tasks-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Dragon Mastery:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:100">
+                                            This is an early game feature which was intended to give some guidance to the players throught available goals which were giving rewards upon completion.<br />
+                                            The feature was a small succes which managed to increase early retention for new game users.<br />
+                                            Here you can see some screenshots:
+                                        </p>
+                                    </div>
+
+                                    <!--Expandable Dragon Perks tasks-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Dragon Perks:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:100">
+                                            This is a feature which intention was to give an RPG component to the dragons.<br />
+                                            We did a generic system which allow to create and give perks to the users via json. They are available to read anywhere the player has a dragon and can apply it's effect when needed.<br />
+                                            This feature was divided in 3 phases:
+                                        </p>
+                                        <ul>
+                                            <li style="font-weight:bolder">
+                                                Breeding Perk
+                                                <p style="font-weight:100">
+                                                    We wanted to try the feature with a less risky approach and we created the perk that give better chance of breeding to the players. It had a positive impact and players wanted to see what else would we deliver.
+                                                </p>
+                                            </li>
+                                            <li style="font-weight:bolder">
+                                                Combat Perks:
+                                                <p style="font-weight:100">
+                                                    This was the most important part, we created 3 new perks for combat, and laid the foundations to the new perks that would be developed in the future for combat<br />
+                                                    - <i>Damage and Health Perks:</i> Pretty explanatory give you a stat boost.<br />
+                                                    - <i>Phoenix Perk:</i> This perk was meta-shifting because it revives the dragon that carries it.<br />
+                                                    Overall it had a positive impact in revenues and in the comunity even if free to play players felt this was to much pay to win.
+                                                </p>
+                                            </li>
+                                            <li style="font-weight:bolder">
+                                                Perks CLean Up:
+                                                <p style="font-weight:100">
+                                                    Last phase of the perk system, we prepared everything so any squad could create a perk put it in the json and give it to the players to play.
+                                                    This included standardization on how to create perks and lots of documentation.<br />
+                                                    Also there are some quality of life for players regarding how much perks they have, find dragons that have perks and better UI to go to the perk screen.
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/vlos7oA1ShI?si=OT04gO044SkBJczX" title="Perks 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                                    </div>
+
+                                    <!--Expandable Bunker Skill tasks-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Bunker Dragon Skill:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:100">
+                                            We did a collaboration with The Walking Dead and I was the main developer for the skills of the thematic dragons.<br />
+                                            We wanted to do something new and added a new feature to the battle system: <b class="thicker">Battle Auras</b>.<br />
+                                            Battle Auras are effects that are applied to all the team and last an amount of turns, which was something we were lacking in Dragon City.<br />
+                                            I embedded the new system into the battle system and wrote the documentation needed to create more in the future.<br />
+                                            <br />
+                                            You can see the bunker skill in the gif below but is basically a shield that reduces the damage from the oponent dragons by X% and avoids critical damage.
+                                        </p>
+                                        <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/2zYZCdjTFHA?si=gC3uKluIJRA8-q0t" title="Bunker Skill" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                                    </div>
+
+                                    <!--Expandable Merge Minigame tasks-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Merge Minigame:</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:100">
+                                            We did a small test for new game users to see if they engage with a merge like feature and the result was pretty good even if the feature was 30 seconds - 1 minute long!
+                                        </p>
+                                        <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/1IgZf0lo5wY?si=NCpJRRd0l-91Rabw" title="Merge Minigame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                                    </div>
+
+                                    <br />Also I created and maintained 2 Tools:
+
+                                    <!--Expandable External QA Round Shaper tasks-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>External QA Round Shaper</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:100">
+                                            This tool allowed the QA team to create all the content needed to be tested in the external QA rounds with a couple of clicks.<br />
+                                            It was a <b class="thicker">Google Sheets based</b> tool using both the spreadsheet functionality and the google script.
+                                        </p>
+                                    </div>
+
+                                    <!--Expandable Battle Tool-->
+                                    <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
+                                        <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Battle Tool</u></h4>
+                                    </button>
+                                    <div class="collapsible content">
+                                        <p style="font-weight:100">
+                                            This was a tool that allowed us to test battles easily that came up from a personal iniciative in conjunction with the QA of my squad.
+                                            We developed the tool because Dragon City made a shift towards combat and we didn't had a proper way to test battles.<br />
+                                            This was a great success because <b class="thicker">reduced the testing time greatly!</b>.<br /><br />
+                                            The tool included: <br />
+                                            - 3 vs 3 Battles.<br />
+                                            - Select of your team and the enemy team.<br />
+                                            - Change dragons stats such as empower or level.<br />
+                                            - Add and Remove Perks.<br />
+                                            - Change the attacks of the dragons.<br />
+                                        </p>
+                                        <p align="center"><iframe style="left:50%;" width="560" height="315" src="https://www.youtube.com/embed/ZdmCzZKfk7k?si=2AFu11CdxVtwlVS7" title="Battle Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+                                    </div>
                                 </div>
-
-                                <br />Also I created and maintained 2 Tools:
-
-                                <!--Expandable External QA Round Shaper tasks-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>External QA Round Shaper</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:100">
-                                        This tool allowed the QA team to create all the content needed to be tested in the external QA rounds with a couple of clicks.<br />
-                                        It was a <b class="thicker">Google Sheets based</b> tool using both the spreadsheet functionality and the google script.
-                                    </p>
-                                </div>
-
-                                <!--Expandable Battle Tool-->
-                                <button type="button" class="collapsibleB" style="background-color: white; padding:0px">
-                                    <h4 onmouseover="changeColor(this, 'var(--background-color)');" onmouseout="resetColor(this);"><u>Battle Tool</u></h4>
-                                </button>
-                                <div class="collapsible content">
-                                    <p style="font-weight:100">
-                                        This was a tool that allowed us to test battles easily that came up from a personal iniciative in conjunction with the QA of my squad.
-                                        We developed the tool because Dragon City made a shift towards combat and we didn't had a proper way to test battles.<br />
-                                        This was a great success because <b class="thicker">reduced the testing time greatly!</b>.<br /><br />
-                                        The tool included: <br />
-                                        - 3 vs 3 Battles.<br />
-                                        - Select of your team and the enemy team.<br />
-                                        - Change dragons stats such as empower or level.<br />
-                                        - Add and Remove Perks.<br />
-                                        - Change the attacks of the dragons.<br />
-                                    </p>
-                                    <p align="center"><iframe style="left:50%;" width="560" height="315" src="https://www.youtube.com/embed/ZdmCzZKfk7k?si=2AFu11CdxVtwlVS7" title="Battle Tool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
-                                </div>
-                            </div>
+</article>
                     </div>
+                </div>
+            </section>
+
+            <section id="six">
+                <div class="container">
+                    <h2 style="color: var(--background-color); font-size: 50px">Contact</h2>
+                    <p>
+                        <span class="icon solid fa-envelope"><a href="mailto:th_sola@hotmail.com"><u style="margin-left:7px">th_sola@hotmail.com</u></a></span><br />
+                        <span class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/èric-solà-vila-266549164"><u style="margin-left:7px">Èric Solà</u></a></span><br />
+                        <span class="icon brands fa-github"><a href="https://github.com/HeladodePistacho"><u style="margin-left:7px">HeladoDePistacho</u></a></span><br />
+                    </p>
                 </div>
             </section>
 
